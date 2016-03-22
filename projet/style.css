@@ -1,0 +1,630 @@
+* {
+
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+
+}
+
+a {
+
+	text-decoration: none;
+	color: inherit;
+
+}
+
+html{
+
+	background-image: url('images/bg.jpeg');
+	background-position: center;
+	
+}
+
+body{
+
+	width:80%;
+	margin: auto;
+	
+}
+
+#corps {
+
+	margin-bottom: 1em;
+	
+}
+
+.rouge {
+	
+	color: red;
+	
+}
+
+.vert {
+	
+	color: green;
+	
+}
+
+.produit {
+
+	float: left;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 7px black;
+	margin: 0 20px 10px 10px;
+
+}
+
+p {
+
+	padding: 1em;
+	line-height: 1.5em;
+	text-align: justify;
+
+}
+
+/**********/
+/* Header */
+/**********/
+
+#top{
+
+	min-height: 186px;
+	
+}
+
+header{
+	
+	background: rgba(255,255,255,0.3);
+	width: 100%;
+	
+}
+
+header h1{
+	
+	margin-top: 1.7em;
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	color: #F6F0E2;
+	text-shadow: 2px 2px 5px black;
+	
+}
+
+
+header h1 .accentue {
+
+	color: white;
+
+}
+
+header h2{
+
+	margin-top: 1em;
+	font-size: 1.5em;
+	color: #F6F0E2;
+	text-shadow: 2px 2px 5px black;
+	font-family: Arial, sans-serif;
+	font-weight: lighter;
+	
+}
+
+#logo{
+	
+	max-width: 19%;
+	float: left;
+	background-color: rgba(255,255,255,0.3);
+	margin-right: 1%;
+	height: 186px;
+	
+}
+
+#logo img {
+
+	max-height: 100%;
+	max-width: 100%;
+	transition: 0.5s;
+
+}
+
+#logo img:hover {
+
+	
+	transform: rotate(360deg);
+	
+
+}
+
+header section{
+
+	text-align: left;
+	width: 50%;
+	height: 186px;
+	float: left;
+	
+}
+
+header aside{
+
+	text-align: center;
+	float: right;
+	width: 30%;
+	height: 186px;
+	background-color: rgba(255,255,255,0.3);
+	
+}
+
+header aside h2 {
+
+	margin-top: 10px;
+
+}
+
+header h2:hover {
+
+	color: white;
+
+}
+
+header aside .item {
+
+	width: 80%;
+	height: 60px;
+	margin: 10px 0 0 10%;
+	background: rgba(255,255,255,0.5);
+	border-radius: 5px;
+	box-shadow: 0 0 7px black;
+	transition: 0.33s;
+	text-shadow: 0 0 10px #EEE;
+
+}
+
+header aside .item .image {
+
+	float: left;
+	height: 50px;
+	width: 50px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 7px black;
+	margin: 5px 5px 0 5px;
+	
+}
+
+header aside .item .image img {
+
+	max-width: 50px;
+	max-height: 50px;
+
+}
+
+header aside .item h3 {
+
+	padding-top: 10px;
+	text-align: center;
+
+}
+
+header aside .item:hover h3 {
+
+	color: white;
+
+}
+
+/********/
+/* Menu */
+/********/
+
+nav{
+
+	background: #333;
+	text-align: center;
+	height:2.5em;
+	width: 100%;
+
+}
+
+nav a {
+
+	float: left;
+	line-height: 2.5em;
+	padding: 0 0.5em;
+	color: #F6F0E2;
+	transition: 0.33s;
+	font-size: 1em;
+	
+}
+
+nav a:hover {
+
+	background: #F6F0E2;
+	color: #333;
+	box-shadow: 0 0 15px white;
+
+}
+
+nav form{
+
+	width: 30%;
+	float:right;
+	height: 100%;
+	
+}
+
+nav form input, nav form button {
+
+	border: 0;
+	height: 100%;
+	padding: 0 1%;
+	
+}
+
+nav form button {
+
+	width: 20%;
+
+}
+
+nav form input {
+
+	width: 78%;
+	
+}
+
+/********/
+/* Main */
+/********/
+
+main{
+
+	text-align: center;
+	width: 100%;
+	
+}
+
+main aside {
+
+	background: linear-gradient(to bottom, rgba(51,51,51,1) 0%, rgba(255,255,255,0.7) 10%, rgba(255,255,255,0.7) 90%, rgba(200,200,200,1) 100%);
+	height: 5em;
+	line-height: 5em;
+	color: #333;
+
+}
+
+main aside q:before, main aside q:after {
+
+	content: "";
+
+}
+
+main article {
+
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 30%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0.8) 100%);
+
+}
+
+main .conteneur:after {
+
+	content: "";
+	display: table;
+	clear: both;
+  
+}
+
+main .conteneur .row {
+
+	overflow: hidden;
+	padding: 0.5em 0;
+
+}
+
+#resultat_echec {
+	
+	min-height: 0px;
+	background: #FD3636;
+	padding: 1em 0;
+	color: #651717;
+	font-weight: bold;
+	box-shadow: inset 0 0 1em #651717;
+	
+}
+
+#resultat_info {
+	
+	min-height: 0px;
+	background: #3FABFE;
+	padding: 1em 0;
+	color: #104B79;
+	font-weight: bold;
+	box-shadow: inset 0 0 1em #104B79;
+	
+}
+
+#resultat_reussi {
+	
+	min-height: 0px;
+	background: #4CD750;
+	padding: 1em 0;
+	color: #206022;
+	font-weight: bold;
+	box-shadow: inset 0 0 1em #206022;
+	
+}
+
+main article h2 {
+	
+	text-align: left;
+	padding-top: 0.5em;
+	width: 92%;
+	margin-left: 4%;
+	margin-bottom: 1em;
+	font-size: 2em;
+	letter-spacing: 0.05em;
+	color: #333;
+	border-bottom: 1px solid #FFF;
+
+}
+
+main .item {
+	
+	margin-left: 4%;
+	width: 20%;
+	padding-top: 1em;
+	float: left;
+	background: rgba(255,255,255,0.2);
+	border-radius: 5px;
+	transition: 0.33s;
+
+}
+
+main .item_large {
+
+	margin-left: 10%;
+	width: 80%;
+	padding-top: 1em;
+	float: left;
+	background: rgba(255,255,255,0.2);
+	border-radius: 5px;
+	transition: 0.33s;
+
+}
+
+.item:hover {
+
+	background: rgba(162,87,0,0.2);
+	box-shadow: 0 0 7px black;
+
+}
+
+main .item .image {
+
+	width: 140px;
+	height: 140px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 7px black;
+	margin: 0.7em auto 0.7em;
+	text-align: center;
+	
+}
+
+main .item .image img {
+
+	max-width: 140px;
+	max-height: 140px;
+	border-radius: 5px;
+
+}
+
+main article .item h3 {
+
+	font-size: 1.3em;
+	color: #333;
+	text-shadow: 0 0 10px #EEE;
+	margin-bottom: 0.5em;
+
+}
+
+main article .item:hover h3 {
+
+	color:white;
+
+}
+
+main article .item {
+
+	padding-bottom: 0.5em;
+
+}
+
+main article article img {
+
+	float: left;
+
+}
+
+main .payer {
+	
+	color: darkgreen;
+	
+}
+
+.ajouter:hover {
+	
+	color: green;
+	
+}
+
+.retirer:hover {
+	
+	color: red;
+	
+}
+
+main .item table {
+	
+	width: 90%;
+	margin: auto;
+	border-collapse: collapse;
+	
+}
+
+main .item td, main .item th {
+	
+	padding: 0.4em 0.2em;
+	
+}
+
+main .item thead, main .item tfoot {
+	
+	background: white;
+	border-bottom: 1px solid #AAA;
+	
+}
+
+main .item tbody tr {
+	
+	background: #EEE;
+	border-bottom: 1px solid #AAA;
+	
+}
+
+main .item tbody tr:nth-child(2n+1) {
+	
+	background: #DDD;
+	
+}
+
+.qsn{
+
+	text-align: left;
+	margin: 1.5em 0 0 9%;
+
+}
+
+.qsn~p {
+
+	width: 80%;
+	margin: auto;
+
+}
+
+.qsn~.item {
+
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 2em;
+	padding-left: 1.5em;
+	text-align: left;
+
+}
+
+.qsn~.item .image {
+
+	float: left;
+	margin-right: 2em;
+
+}
+
+.dt h3 {
+
+	text-align: left;
+	margin-left: 10%;
+	margin-top: 2em;
+
+}
+
+.dt p, .dt ol {
+
+	text-align: justify;
+	margin-left: 11%;
+	line-height: 1.5em;
+	margin-right: 11%;
+
+}
+
+.dt ol {
+
+	padding-left: 2.5em;
+
+}
+
+
+
+/**********/
+/* Footer */
+/**********/
+
+footer{
+
+	width: 100%;
+}
+
+footer p{
+
+	text-align: center;
+	color: #F6F0E2;
+	font-size: 0.8em;
+	
+}
+
+@media all and (max-device-width: 480px)
+{
+	/* Règles CSS pour mobiles */
+	
+	#logo {
+	
+		display: none;
+	
+	}
+	
+	main .item {
+		
+		width: 90%;
+		margin: 0 auto 1em;
+		float: none;
+		font-size: 2em;
+		
+	}
+	
+	header section, header aside {
+		
+		width: 100%;
+		float: none;
+		
+	}
+	
+	header section h1, header section h2 {
+		
+		padding: 1em 0 0 1em;
+		
+	}
+	
+	nav {
+		
+		height: auto;
+		
+	}
+	
+	nav a {
+		
+		font-size: 2em;
+		display: block;
+		float: none;
+		
+	}
+	
+	nav form {
+		
+		width: 100%;
+		height: 4em;
+		float: none;
+		
+	}
+	
+	nav input, nav button {
+		
+		font-size: 2em;
+		
+	}
+	
+}
